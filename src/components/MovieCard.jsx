@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
 
 import { FaStar } from 'react-icons/fa'
 
 import './MovieCard.css'
 
 const imageUrl = import.meta.env.VITE_IMG
-
-import PropTypes from 'prop-types';
-
 
 const MovieCard = ({ movie, showLink = true }) => {
     return (
@@ -33,7 +31,7 @@ MovieCard.propTypes = {
         release_date: PropTypes.string.isRequired,
         id: PropTypes.number.isRequired,
     }).isRequired,
-    showLink: PropTypes.bool,
-};
+    showLink: PropTypes.bool
+}
 
 export default MovieCard

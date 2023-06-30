@@ -6,26 +6,26 @@ import './MoviesGrid.css'
 const moviesUrl = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
 
-const Home = () => {
-    const [nowMovies, setNowMovies] = useState([])
+const Upcoming = () => {
+    const [upcomingMovies, setUpcomingMovies] = useState([])
 
-    const getNowPlayingMovies = async (url) => {
+    const getUpcomingMovies = async (url) => {
         const res = await fetch(url)
         const data = await res.json()
-        setNowMovies(data.results)
+        setUpcomingMovies(data.results)
     }
 
     useEffect(() => {
-        const nowPlayingUrl = `${moviesUrl}now_playing?${apiKey}`
-        getNowPlayingMovies(nowPlayingUrl)
+        const upcomingUrl = `${moviesUrl}upcoming?${apiKey}`
+        getUpcomingMovies(upcomingUrl)
     }, [])
 
     return (
         <div className="container">
-            <h2 className="title">Últimos lançamentos:</h2>
-            <MoviesContainer moviesList={nowMovies} />
+            <h2 className="title">Em breve:</h2>
+            <MoviesContainer moviesList={upcomingMovies} />
 Now     </div>
     )
 }
 
-export default Home
+export default Upcoming
