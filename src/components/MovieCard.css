@@ -1,0 +1,41 @@
+.movies-container div {
+    width: 30%;
+    color: #f5f5dc;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+
+.movies-container div img,
+.movies-container div h2,
+.movies-container div p {
+    margin-bottom: 1rem;
+}
+
+.movies-container div img {
+    max-width: 100%;
+}
+
+.movies-container div svg {
+    color: #ffff00;
+}
+
+
+.movies-container div a {
+    background-color: #f5f5dc;
+    border: 2px solid #f5f5dc;
+    border-radius: 4px;
+    color: #000;
+    padding: 1rem .5rem;
+    transition: .4s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.movies-container div a:hover {
+    background-color: transparent;
+    color: #f5f5dc;
+}
