@@ -1,11 +1,11 @@
 .movies-container div {
-    width: 30%;
+    width: 270px;
     color: #f5f5dc;
     margin-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #160607;
     padding: 1rem;
 }
 

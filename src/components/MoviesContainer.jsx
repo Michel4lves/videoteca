@@ -13,7 +13,7 @@ const MoviesContainer = ({ moviesList }) => {
 }
 
 MoviesContainer.propTypes = {
-    moviesList: PropTypes.object,
+    moviesList: PropTypes.array,
 }
 
 export default MoviesContainer

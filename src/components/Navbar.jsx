@@ -20,25 +20,40 @@ const Navbar = () => {
 
     return (
         <nav id="navbar">
-            <h2>
-                <Link to='/'>
-                    <BiCameraMovie /> 
-                    Vide
-                    <img src={roll} alt='roll_logo' className={roll}/>
-                    teca
-                </Link>
-            </h2>
-            <form onSubmit={handleSubmit}>
-                <input 
-                    type="text" 
-                    placeholder="Busque um filme" 
-                    onChange={(e) => setSearch(e.target.value)} 
-                    value={search}
-                />
-                <button type="submit">
-                    <BiSearchAlt2 />
-                </button>
-            </form>
+            <div className="nav-header">
+                <h2>
+                    <Link to='/'>
+                        <BiCameraMovie /> 
+                        Vide
+                        <img src={roll} alt='roll_logo' className={roll}/>
+                        teca
+                    </Link>
+                </h2>
+                <form onSubmit={handleSubmit}>
+                    <input 
+                        type="text" 
+                        placeholder="Busque um filme" 
+                        onChange={(e) => setSearch(e.target.value)} 
+                        value={search}
+                    />
+                    <button type="submit">
+                        <BiSearchAlt2 />
+                    </button>
+                </form>
+            </div>
+            <div className="nav-links">
+                <ul>
+                    <li>
+                        <Link to='/'>Últimos Lançamentos</Link>
+                    </li>
+                    <li>
+                        <Link to='bestmovies'>Melhores Filmes</Link>
+                    </li>
+                    <li>
+                        <Link to='upcoming'>Em Breve</Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     )
 }

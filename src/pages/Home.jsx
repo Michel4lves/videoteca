@@ -24,7 +24,7 @@ const Home = () => {
         <div className="container">
             <h2 className="title">Últimos lançamentos:</h2>
             <MoviesContainer moviesList={nowMovies} />
-Now     </div>
+        </div>
     )
 }
 
