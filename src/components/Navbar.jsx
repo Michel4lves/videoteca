@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav id="navbar">
             <div className="nav-header">
                 <h2>
-                    <Link to='videoteca/'>
+                    <Link to='/'>
                         <BiCameraMovie /> 
                         Vide
                         <img src={roll} alt='roll_logo' className={roll}/>
@@ -44,13 +44,13 @@ const Navbar = () => {
             <div className="nav-links">
                 <ul>
                     <li>
-                        <Link to='videoteca/'>Últimos Lançamentos</Link>
+                        <Link to='/'>Últimos Lançamentos</Link>
                     </li>
                     <li>
-                        <Link to='videoteca/bestmovies'>Melhores Filmes</Link>
+                        <Link to='bestmovies'>Melhores Filmes</Link>
                     </li>
                     <li>
-                        <Link to='videoteca/upcoming'>Em Breve</Link>
+                        <Link to='upcoming'>Em Breve</Link>
                     </li>
                 </ul>
             </div>
