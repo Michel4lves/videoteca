@@ -8,7 +8,6 @@
 - Possibilidade le listar determinados filmes conforme pesquisa;
 - Informação detalhadas dos filmes;
 
-Esse projeto utiliza a API do site https://www.themoviedb.org/ e codificado utilizando o React-js.
+Esse projeto utiliza a API do site themoviedb.org e codificado em React utilizando a biblioteca VITE.
 
 Acesse esse trabalho em:
-https://michel4lves.github.io/videoteca/
