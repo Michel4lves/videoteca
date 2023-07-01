@@ -11,3 +11,4 @@
 Esse projeto utiliza a API do site themoviedb.org e codificado em React utilizando a biblioteca VITE.
 
 Acesse esse trabalho em:
+https://videoteca-mauve.vercel.app/
